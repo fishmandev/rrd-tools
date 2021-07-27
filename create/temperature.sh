@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 
-rrdtool create temperatures_tmp.rrd \
+rrdtool create temperature.rrd \
 --step 60 \
 DS:temp:GAUGE:120:0:50 \
 RRA:MAX:0.5:1:10080 \
